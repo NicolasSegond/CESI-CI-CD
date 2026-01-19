@@ -1,14 +1,14 @@
-# Demo App Python
+# Demo App Python (Structure Pro)
 
-Une application simple pour démontrer la conteneurisation.
+Une application simple démontrant la conteneurisation avec une structure de projet propre.
 
-## Lancement avec Docker (Recommandé)
+## Structure
+- `app/` : Code source de l'application
+- `tests/` : Tests unitaires
+- `config/` : Configurations des outils (Linter, Sécurité)
+
+## Lancement avec Docker
 
 1. Construire l'image :
+   ```bash
    docker build -t python-demo .
-
-2. Lancer le conteneur :
-   docker run -p 5000:5000 python-demo
-
-3. Accéder à l'application :
-   http://localhost:5000

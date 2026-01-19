@@ -1,0 +1,4 @@
+### Configuration Bandit ###
+exclude_dirs: ["tests"]
+
+skips: ["B101"]
