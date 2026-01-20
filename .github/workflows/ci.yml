@@ -39,4 +39,4 @@ jobs:
       - name: Audit de sécurité des dépendances
         run: |
           pip install pip-audit
-          pip audit
+          pip-audit
