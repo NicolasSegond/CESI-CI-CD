@@ -35,3 +35,8 @@ jobs:
       - name: Scan de sécurité Bandit
         run: |
           bandit -c config/bandit.yaml -r app/
+
+      - name: Audit de sécurité des dépendances
+        run: |
+          pip install pip-audit
+          pip audit
